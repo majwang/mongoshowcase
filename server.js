@@ -23,7 +23,7 @@ var express  = require('express'),
  * MONGOLAB_URI=mongodb://example:example@ds053312.mongolab.com:53312/todolist
  * 'mongodb://example:example@ds053312.mongolab.com:53312/todolist'
  */
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+mongoose.connect('mongodb://<carpool.tunnel>:<lulcats2>@ds017246.mlab.com:17246/mongo-showcase', function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
 });
